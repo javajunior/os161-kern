@@ -105,6 +105,10 @@ boot(void)
 		GROUP_VERSION, buildconfig, buildversion);
 	kprintf("\n");
 
+	/*call hello function for the first excercise of lab1 */
+
+	hello();
+
 	/* Early initialization. */
 	ram_bootstrap();
 	proc_bootstrap();
